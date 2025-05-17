@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+
+    <script>
+        function redirect() {
+            const videos = [
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                "https://www.youtube.com/watch?v=9bZkp7q19f0",
+                "https://www.youtube.com/watch?v=3JZ_D3ELwOQ"
+            ];
+
+            const i = Math.floor(Math.random() * videos.length);
+            window.location.href = videos[i];
+        }
+
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <p>Pozdrav!</p>
+</body>
+</html>
